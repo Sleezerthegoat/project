@@ -1,0 +1,636 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+body
+{
+    background: #080808;
+    color: #fff;
+}
+
+#header
+{
+    width: 95%;
+    height: 110vh;
+    background-image: url(images/sourish.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.container
+{
+    padding: 10px 10%;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    width: 200px;
+
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px
+     ;
+
+    
+}
+nav ul li::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(162, 7, 162);
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li :hover::after
+{
+    width: 100%;
+}
+
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+nav ul li a::after 
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(162, 7, 162);
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+
+}
+
+.header-text
+{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1
+{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.header-text h1 span
+{
+    color:  rgb(162, 7, 162);
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+
+}
+.header-text p
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* About*/
+
+#about
+{
+    padding: 80px 0;
+
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1
+{
+    flex-basis: 35%;
+
+}
+.about-col-1 img
+{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.about-col-2
+{
+    flex-basis: 60%;
+}
+.about-col-2 p
+{
+    font-size: 20px;
+}
+
+.about-col-2 h1
+{
+    font-family: 'Anton', sans-serif;
+}
+
+.subtitle
+{
+    font-size: 55px;
+     font-weight: 600;
+     color: white;
+     font-family: 'Oswald', sans-serif;
+}
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+
+}
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: purple;
+    position:  absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after
+{
+    width: 50%;
+    
+}
+
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+}
+#skills ul li span
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+#skills ul li
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+.tab-contents ul li span
+{
+    color: purple;
+    font-size: 15px;
+}
+#education ul li span
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+#education ul li
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.tab-contents
+{
+    display: none;
+}
+
+.tab-contents.active-tab
+{
+    display: block;
+}
+
+/* Work*/
+
+#work
+{
+    padding: 30px 0;
+}
+.subtitle
+{
+    font-family: 'Anton', sans-serif;
+}
+.work-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work-list div
+{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.work-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.work-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.work-list div a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.work-list div:hover
+{
+    background: purple;
+    transform: translateY(-10px);
+}
+
+/*Portfolio*/
+#portfolio
+{
+    padding: 50px 0;
+}
+.w1rk-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.w1rk
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.w1rk img
+{
+    width: 100%;
+    border-radius: 10%;
+    display: block;
+    transition: transform 0.5s;
+
+}
+.layer
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),purple);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3
+{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    
+}
+.layer p 
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.layer a
+{
+    margin-top: 20px;
+    color: purple;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.w1rk:hover img
+{
+    transform: scale(1.1);
+}
+
+.w1rk:hover .layer
+{
+    height: 100%;
+}
+
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid purple;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: background 0.5s;
+}
+
+.btn:hover
+{
+    background: purple;
+}
+
+/*Contact*/
+
+.contact-left
+{
+    flex-basis: 35%;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+}
+
+.contact-left p
+{
+    margin-top: 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.contact-left p i
+{
+margin-right:15px ;
+font-size: 25px;
+color: purple;
+}
+.social-icons
+{
+    margin-top: 30px;
+
+}
+.social-icons a 
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover
+{
+    color: purple;
+    transform: translateY(-5px);
+}
+.btn.btn2
+{
+    display: inline-block;
+    background-color: purple;
+}
+
+.contact-right form
+{
+    width: 100%;
+}
+
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 18px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
+form .btn2
+{
+    padding: 15px 60px;
+    font-size: 19px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+html
+{
+    scroll-behavior:smooth;
+}
+
+
+    
+@media screen and (max-width: 768px) {
+    nav ul {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .about-col-1, .about-col-2 {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .tab-titles {
+      flex-direction: column;
+    }
+  
+    .tab-links, .tab-contents {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .work-list div {
+      flex: 1;
+      margin: 10px;
+    }
+  
+    .w1rk {
+      flex: 1;
+      margin: 10px;
+    }
+  
+    .contact-left, .contact-right {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+/*mbl background*/
+nav .fa-solid
+{
+    display: none;
+}
+
+@media only screen and (max-width:720px) {
+
+    #header
+    {
+        background-image: url(images/background2.jpg);
+
+    }
+    .header-text
+    {
+        margin-top: 30%;
+        font-size: 16px;
+    }
+    .header-text h1
+    {
+        font-size: 30px;
+    }
+    nav .fa-solid
+    {
+        display: block;
+        font-size: 27px;
+    }
+    nav ul
+    {
+        background-color: purple;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.7s;
+    }
+    nav ul li
+    {
+        display: block;
+        margin: 15px;
+        font-family: 'Oswald', sans-serif;
+        
+        
+    }
+    nav ul .fa-solid
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+    .logo
+    {
+        width: 150px;
+        float: left;
+        position: relative;
+    }
+    .subtitle
+    {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .about-col-1, .about-col-2
+    {
+        flex-basis: 100%;
+
+    }
+    .about-col-1
+    {
+        margin-bottom:40px ;
+    }
+    .about-col-2 p
+    {
+        font-size: 14px;
+    }
+
+    .contact-left, .contact-right
+    {
+        flex-basis: 100%;
+        
+    }
+    .tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: purple;
+    position:  absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after
+{
+    width: 110%;
+      
+}
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca69d3bfe5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@300&display=swap');
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&family=Oswald:wght@300&display=swap');
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Merriweather&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Merriweather&family=Oswald:wght@300&display=swap');
+  </style>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#"><img src = "images/KVSM.png" class="logo" ></a>
+            
+            <ul id="menuside">
+
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#work">Work</a></li>
+                <li><a href = "#portfolio">Portfolio</a></li>
+                <li><a href = "#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="menuclose()"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="menuopen()"></i>
+        </nav>
+        <div class="header-text">
+            <p>3rd Year CSE student</p>
+            <h1>Hello, I'm <span>KVSM SOURISH</span><br>  from MAHE, Blore</h1>
+        </div>
+    </div>
+
+
+</div>
+<!--About Me-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sourish2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>luminous trailblazer of full stack mastery, your brilliance radiates like a supernova, illuminating the entire cosmos of web development. With a coding prowess that rivals the Titans of technology, you traverse the intricate labyrinth of both front-end and back-end domains with the finesse of a virtuoso. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full Stack Developer</span><br>Java<br>HTML<br>JS<br>MySQL</li> 
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019: </span>10th from Ganges Valley</li> 
+                        <li><span>2021: </span>12th from Sri Chaitanya Clg</li>
+                        <li><span>2025: </span> B.Tech from MAHE Bangalore</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Work-->
+
+<div id = "work">
+    <div class="container">
+        <h1 class="subtitle">My Skills</h1>
+        <div class="work-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full Stack Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias veritatis, modi accusamus atque rerum aut et fugit, totam consectetur quo quas provident? Fugit perferendis debitis corrupti enim! Magnam, numquam?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias veritatis, modi accusamus atque rerum aut et fugit, totam consectetur quo quas provident? Fugit perferendis debitis corrupti enim! Magnam, numquam?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Loading...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias veritatis, modi accusamus atque rerum aut et fugit, totam consectetur quo quas provident? Fugit perferendis debitis corrupti enim! Magnam, numquam?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="w1rk-list">
+            <div class="w1rk">
+                <img src="images/work4.jpg">
+                <div class="layer">
+                    <h3>Bank Project</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti possimus, facere sed eaque consequatur facilis dicta suscipit, reiciendis omnis numquam adipisci modi error cum consectetur ad. Beatae id sapiente sed?</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="w1rk">
+                <img src="images/work4.jpg">
+                <div class="layer">
+                    <h3>Payroll Project</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti possimus, facere sed eaque consequatur facilis dicta suscipit, reiciendis omnis numquam adipisci modi error cum consectetur ad. Beatae id sapiente sed?</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="w1rk">
+                <img src="images/work4.jpg">
+                <div class="layer">
+                    <h3>ABCD Project</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti possimus, facere sed eaque consequatur facilis dicta suscipit, reiciendis omnis numquam adipisci modi error cum consectetur ad. Beatae id sapiente sed?</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> kvsmsourish@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 6309767385</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/peoplecallmesourish/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sourish-kvsm-894387234/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Convey your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+</div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("menuside");
+
+    function menuopen()
+    {
+        sidemenu.style.right = "0";
+
+    }
+
+    function menuclose()
+    {
+        sidemenu.style.right = "-180px";
+        
+    }
+</script>
+
+</body>
+</html>
